@@ -7,7 +7,7 @@
  */
 public class Animacao  {
     
-private int id;
+    private int id;
     private String nome;
     private String diretor;
     private String lancamento;
@@ -28,6 +28,8 @@ private int id;
         this.dublagem = dublagem;
         this.idioma = idioma;
     }
+
+
     
 
     public int getId() {

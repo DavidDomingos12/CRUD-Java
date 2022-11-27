@@ -37,9 +37,12 @@ public class Principal {
 
         int opcao = 0;
         do {
-            System.out.println("Digite 0 para sair | digite 1 para listar animes | Digite 2 para adicionar um Anime ");
+            System.out.println("---------------------------------------------");
+            System.out.println("Digite 0 para sair");
+            System.out.println("Digite 1 para listar animes");
+            System.out.println("Digite 2 para adicionar um Anime");
             System.out.println("Digite 3 para pesquisar por ID:");
-            System.out.println("--------------------------------------------------------");
+            System.out.println("---------------------------------------------");
             opcao = scan.nextInt();
 
             switch (opcao) {
