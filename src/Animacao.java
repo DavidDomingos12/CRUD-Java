@@ -1,10 +1,4 @@
 
-
-
-/**
- *
- * @author rilton
- */
 public class Animacao  {
     
     private int id;
@@ -28,9 +22,6 @@ public class Animacao  {
         this.dublagem = dublagem;
         this.idioma = idioma;
     }
-
-
-    
 
     public int getId() {
         return id;
