@@ -1,6 +1,6 @@
 
-public class Animacao  {
-    
+public class Animacao {
+
     private int id;
     private String nome;
     private String diretor;
@@ -11,8 +11,8 @@ public class Animacao  {
     private String dublagem;
     private String idioma;
 
-    public Animacao(String nome, String diretor, String lancamento, int temporada, int episodios, double nota ,String dublagem, String idioma)
-    {
+    public Animacao(String nome, String diretor, String lancamento, int temporada, int episodios, double nota,
+            String dublagem, String idioma) {
         this.nome = nome;
         this.diretor = diretor;
         this.lancamento = lancamento;
@@ -95,8 +95,4 @@ public class Animacao  {
         this.idioma = idioma;
     }
 
-    
-    
-        
-    
 }
