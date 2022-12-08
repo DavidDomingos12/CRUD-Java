@@ -1,5 +1,5 @@
 
-public class Animacao {
+public class Animacao implements Comparable<Animacao>{
 
     private int id;
     private String nome;
@@ -24,6 +24,23 @@ public class Animacao {
         this.idioma = idioma;
     }
 
+    
+    @Override 
+    public int compareTo(Animacao outraAnimacao) { 
+    	if(this.nota > outraAnimacao.getNota()) {
+    		return -1;
+    	}
+    	if(this.nota < outraAnimacao.getNota()) {
+    		return 1;
+    	}
+    	
+    	
+    	
+    	return 0;
+
+    }
+    
+    
     public void showInfo() {
         System.out.println("ID: " + this.getId());
         System.out.println("Nome: " + this.getNome());
@@ -42,6 +59,8 @@ public class Animacao {
     	System.out.println("Nome: " + this.getNome());
         System.out.println("Diretor: " + this.getDiretor());
         System.out.println("Idioma: " + this.getIdioma());
+        System.out.println("Nota: " + this.getNota());
+
     	
     }
     

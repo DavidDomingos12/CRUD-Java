@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class AnimeController {
@@ -52,6 +53,7 @@ public class AnimeController {
 	    }
 
 	    public void listarAnimacoes() {
+	    	Collections.sort(listaAnimes);
 	        for (int i = 0; i < listaAnimes.size(); i++) {
 	        	listaAnimes.get(i).showPartialInfo();
 	            System.out.println("__________________________________________________");
