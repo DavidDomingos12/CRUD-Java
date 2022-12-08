@@ -11,8 +11,9 @@ public class Animacao {
     private String dublagem;
     private String idioma;
 
-    public Animacao(String nome, String diretor, String lancamento, int temporada, int episodios, double nota,
+    public Animacao(int id, String nome, String diretor, String lancamento, int temporada, int episodios, double nota,
             String dublagem, String idioma) {
+    	this.id = id;
         this.nome = nome;
         this.diretor = diretor;
         this.lancamento = lancamento;
@@ -23,6 +24,29 @@ public class Animacao {
         this.idioma = idioma;
     }
 
+    public void showInfo() {
+        System.out.println("ID: " + this.getId());
+        System.out.println("Nome: " + this.getNome());
+        System.out.println("Diretor: " + this.getDiretor());
+        System.out.println("Lançamento: " + this.getLancamento());
+        System.out.println("Temporada: " + this.getTemporada());
+        System.out.println("Episodios: " + this.getEpisodios());
+        System.out.println("Nota: " + this.getNota());
+        System.out.println("Dublagem: " + this.getDublagem());
+        System.out.println("Idioma: " + this.getIdioma());
+
+    }
+    
+    public void showPartialInfo() {
+        System.out.println("ID: " + this.id);
+    	System.out.println("Nome: " + this.getNome());
+        System.out.println("Diretor: " + this.getDiretor());
+        System.out.println("Idioma: " + this.getIdioma());
+    	
+    }
+    
+     
+     
     public int getId() {
         return id;
     }
