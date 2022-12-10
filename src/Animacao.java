@@ -1,4 +1,4 @@
-
+//implementando a função comparable (collections)
 public class Animacao implements Comparable<Animacao>{
 
     private int id;
@@ -24,18 +24,18 @@ public class Animacao implements Comparable<Animacao>{
         this.idioma = idioma;
     }
 
-    
+    //função do collections que retorna ordenação
     @Override 
     public int compareTo(Animacao outraAnimacao) { 
+//forma decrescente
     	if(this.nota > outraAnimacao.getNota()) {
     		return -1;
     	}
-    	if(this.nota < outraAnimacao.getNota()) {
-    		return 1;
-    	}
-    	
-    	
-    	
+//forma crescente
+    	//if(this.id < outraAnimacao.getId()) {
+    	//	return 1;
+    	//}
+  	
     	return 0;
 
     }

@@ -94,13 +94,14 @@ public class AnimeController {
 	        int idPesquisa = scan.nextInt();
 	        System.out.println(
 	                "--------------------------   RESULTADO DA PESQUISA     ------------------------------");
-	        try {
-		        listaAnimes.get(idPesquisa - 1).showInfo();
+                 listaAnimes.get(idPesquisa - 1).showInfo();
+	        //try {
+		//       listaAnimes.get(idPesquisa - 1).showInfo();
 
-	        }
-	        catch(Exception e) {
-	        	System.out.println("Anime nao encontrado.");
-	        }
+	        
+	        //catch(Exception e) {
+	        //	System.out.println("Anime nao encontrado.");
+	        //}
 	       
 	        System.out.println("--------------------------------------------------------");
 	    }
@@ -142,7 +143,7 @@ public class AnimeController {
 
 	    public void alterarAnime() {
 	        System.out.println("Digite o ID do anime que deseja alterar?");
-	        int indice = scan.nextInt() - 1;
+	        int indice = scan.nextInt();
 
 	        Anime animePesquisado = listaAnimes.get(indice);
 
